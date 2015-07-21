@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{FBB10D9B-A045-4077-BE56-D71CC8A113AE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>XamarinAndroidFFmpeg</RootNamespace>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>False</AndroidUseLatestPlatformSdk>
+    <AssemblyName>XamarinAndroidFFmpeg</AssemblyName>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Helpers\ffmpeg\Clip.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\CropVideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\DrawBoxVideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\DrawTextVideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\FadeVideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\OverlayVideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\RedactVideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\TransposeVideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\VideoFilter.cs" />
+    <Compile Include="Helpers\ffmpeg\ShellUtils.cs" />
+    <Compile Include="Helpers\ffmpeg\test\ConcatTest.cs" />
+    <Compile Include="Helpers\ffmpeg\test\ConvertTest.cs" />
+    <Compile Include="Helpers\ffmpeg\test\CrossfadeTest.cs" />
+    <Compile Include="Helpers\ffmpeg\test\FilterTest.cs" />
+    <Compile Include="Helpers\ffmpeg\test\MixTest.cs" />
+    <Compile Include="Helpers\ffmpeg\test\Tests.cs" />
+    <Compile Include="Helpers\sox\CrossfadeCat.cs" />
+    <Compile Include="Helpers\sox\SoxHelpers.cs" />
+    <Compile Include="Helpers\ffmpeg\FFMpeg.cs" />
+    <Compile Include="Helpers\ffmpeg\filters\ColorVideoFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+    <AndroidResource Include="Resources\raw\ffmpeg" />
+    <AndroidResource Include="Resources\raw\sox" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Resources\raw\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,26 @@
+﻿<Properties StartupItem="XamarinAndroidFFmpegTests\XamarinAndroidFFmpegTests.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.YT910HX7SE" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="XamarinAndroidFFmpeg\Helpers\ffmpeg\FFMpeg.cs">
+    <Files>
+      <File FileName="XamarinAndroidFFmpeg\Helpers\ffmpeg\FFMpeg.cs" Line="919" Column="29" />
+      <File FileName="XamarinAndroidFFmpeg\Helpers\ffmpeg\Clip.cs" Line="1" Column="1" />
+      <File FileName="XamarinAndroidFFmpeg\Helpers\ffmpeg\filters\CropVideoFilter.cs" Line="1" Column="1" />
+      <File FileName="XamarinAndroidFFmpeg\Helpers\ffmpeg\filters\OverlayVideoFilter.cs" Line="1" Column="1" />
+      <File FileName="XamarinAndroidFFmpeg\Helpers\ffmpeg\filters\VideoFilter.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\leon.pelletier.APCURIUM\Documents\Projects\ffmpeg\ffmpeg\MainActivity.cs" line="62" column="1" />
+      <Breakpoint file="C:\Users\leon.pelletier.APCURIUM\Documents\Projects\ffmpeg\MediaCodec\GlVideoView.cs" line="317" column="35" />
+      <Breakpoint file="C:\Users\leon.pelletier.APCURIUM\Documents\Projects\ffmpeg\MediaCodec\GlVideoView.cs" line="555" column="43" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="XamarinAndroidFFmpeg\Helpers\ffmpeg\FFMpeg.cs" line="294" offsetX="604" offsetY="7032" expression="outputClip.videoFilter" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <DisabledProjects>
+    <String>XamarinAndroidFFmpegLibs\XamarinAndroidFFmpegLibs.csproj</String>
+  </DisabledProjects>
+  <MonoDevelop.Ide.ItemProperties.XamarinAndroidFFmpegTest AndroidDesignerPreferredDevice="Nexus 4" AndroidDeviceId-Debug="YT910HX7SE" />
+</Properties>
